@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Grupo de Botões e Alerta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Formulário com Grupo de Botões</h2>
+
+       <!-- Alerta de aviso -->
+    <div class="alert alert-warning" role="alert">
+      Atenção! Você tem um plano de pagamento pendente.
+    </div>
+
+  
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Escolha seu tipo de plano:</label>
+        <div class="btn-group" role="group" aria-label="Plano de serviço">
+          <input type="radio" class="btn-check" name="planos" id="plano1" autocomplete="off">
+          <label class="btn btn-outline-primary" for="plano1">Plano 1</label>
+
+          <input type="radio" class="btn-check" name="planos" id="plano2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="plano2">Plano 2</label>
+
+          <input type="radio" class="btn-check" name="planos" id="plano3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="plano3">Plano 3</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
